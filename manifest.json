@@ -1,0 +1,26 @@
+{
+   "author": "Cássio Faria da Silva",
+   // based on: https://chromium.googlesource.com/chromium/src/+/master/chrome/common/extensions/docs/examples/api/downloads/download_links
+   "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html",
+      "defalut_title": "teste"
+   },
+   "content_scripts": [ {
+      "js": [ "js/jquery.min.js", "js/popup.js", "js/material.min.js" ],
+      "css": [ "css/style.css" , "css/material.min.css"],
+      "matches": [ "http://*/*" ]
+   } ],
+   "description": "Select the links on ACL Anthology, download PDF and BIB files.",
+   "icons": {
+      "128": "img/iconStore.png",
+      "16": "img/icon.png",
+      "48": "img/iconLauncher.png"
+   },
+   "manifest_version": 2,
+   "name": "ACL Anthology download PDF and BIB",
+   "permissions": ["downloads", "<all_urls>"],
+   "version": "1.0",
+   "homepage_url": "http://www.lalic.dc.ufscar.br/",
+   "minimum_chrome_version": "16.0.884"
+}

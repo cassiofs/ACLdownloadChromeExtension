@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<title>ACL Anthology download PDF and BIB</title>
+	<link rel="stylesheet" href="css/material.min.css">
+	<script src="js/material.min.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+	body{
+	    min-width: 420px;
+	    min-height:300px;
+	}
+	h1 {
+    text-align: center;
+
+	}
+</style>
+<body>
+
+
+	<div class = "mdl-layout--fixed-header">
+         <header class = "mdl-layout__header">
+			<span class = "mdl-layout-title">ACL Anthology download PDF and BIB</span>
+			<br>
+			<span>Works on <b>ACL Anthology</b> or 
+				<b>Google</b> (site:aclweb.org/anthology)</span>
+         </header>
+    </div>
+	<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		<input class = "mdl-textfield__input" type=text id=filter>
+		<label class = "mdl-textfield__label" for = "filter">Filter...</label>
+	</div>
+	<input type=checkbox id=regex>
+	<label for=regex>Regex</label><br>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadpdf0>PDF</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadbib0>BibTeX</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadxml0>MODS XML</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadendf0>EndNote</button>
+	<table id=links>
+	  <tr>
+	    <th><input type=checkbox checked id=toggle_all></th>
+	    <th align=left>Select all</th>
+	  </tr>
+	</table>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadpdf1>PDF</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadbib1>BibTeX</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadxml1>MODS XML</button>
+	<button class = "mdl-button mdl-js-button mdl-button--primary" id=downloadendf1>EndNote</button>
+</body>
+</html>
+
